@@ -15,10 +15,10 @@ public class GetBestScores : MonoBehaviour
         bestScores = GetComponent<Text>();
 
         // class ApiManager contains string apiUrl
-        StartCoroutine(GetScores(ApiManager.apiUrl+"score/best/3"));
+        StartCoroutine(GetRequest(ApiManager.apiUrl+"score/best/3"));
     }
 
-    IEnumerator GetScores(string url)
+    IEnumerator GetRequest(string url)
     {
         using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
         {
@@ -32,7 +32,6 @@ public class GetBestScores : MonoBehaviour
             {
                 bestScores.text += score["player"]+" : "+score["value"]+"\n";
             }
-            print(bestScores.text);
 
         }
     }
