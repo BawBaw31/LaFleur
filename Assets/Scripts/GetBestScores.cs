@@ -8,20 +8,17 @@ using SimpleJSON;
 public class GetBestScores : MonoBehaviour
 {
     Text bestScores;
-    string url;
-    public GameObject VarContainer;
-    // ApiUrl script contains url string  
 
     // Start is called before the first frame update
     void Start()
     {
-        url = VarContainer.GetComponent<ApiUrl>().url;
         bestScores = GetComponent<Text>();
-        // StartCoroutine(GetRequest("https://lafleur-game-server.herokuapp.com/api/score/best/3"));
-        StartCoroutine(GetRequest(url+"score/best/3"));
+
+        // class ApiManager contains string apiUrl
+        StartCoroutine(GetScores(ApiManager.apiUrl+"score/best/3"));
     }
 
-    IEnumerator GetRequest(string url)
+    IEnumerator GetScores(string url)
     {
         using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
         {

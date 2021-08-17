@@ -70,6 +70,6 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
-# Hidden vars
-/Assets/Scripts/ApiUrl.cs
-/Assets/Scripts/ApiUrl.cs.meta
+# Api Manager
+/Assets/Scripts/ApiManager.cs
+/Assets/Scripts/ApiManager.cs.meta
