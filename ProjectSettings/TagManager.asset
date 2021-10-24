@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Flame
   - Lafleur
+  - GameManager
   layers:
   - Default
   - TransparentFX

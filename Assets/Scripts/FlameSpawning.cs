@@ -16,9 +16,6 @@ public class FlameSpawning : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spawnPosition = GetRandomPosition();
-        Instantiate(flame, spawnPosition, Quaternion.identity);
-        lastSpawn = 0;
     }
 
     // Update is called once per frame

@@ -14,7 +14,7 @@ public class DisplayScore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        score = GetComponent<Text> ();
+        score = GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class DisplayScore : MonoBehaviour
                 scoreValue += 1;
                 lastScoreTime = 0;
             }
-            score.text = "Score: " + scoreValue;
+            score.text = "Score : " + scoreValue;
         }
     }
 

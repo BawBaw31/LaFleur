@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 764027e3dc3a12f40ba9f67a528b2307
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: OPTITimes-Roman
+  fontNames:
+  - OPTITimes-Roman
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a819b5921a8804249b7da131ee8fef60, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -10,6 +10,7 @@ public class FlamePatrol : MonoBehaviour
     public float minY;
     public float maxSpeed;
     public float minSpeed;
+    public float rotationSpeed;
     public float secondsToMaxDifficulty;
     public float spawnTime;
     public float flameDuration;
@@ -31,6 +32,9 @@ public class FlamePatrol : MonoBehaviour
     {
         // Set Timer
         timer += Time.fixedDeltaTime;
+
+        // Constant Rotation
+        transform.Rotate(Vector3.forward * rotationSpeed * Time.fixedDeltaTime);
 
         // Activate Collider2D
         if(timer >= spawnTime && !col.enabled)
