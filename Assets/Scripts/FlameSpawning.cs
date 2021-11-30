@@ -26,6 +26,9 @@ public class FlameSpawning : MonoBehaviour
         {
             spawnPosition = GetRandomPosition();
             Instantiate(flame, spawnPosition, Quaternion.identity);
+            if (timeLaps > 3) {
+                timeLaps -= 0.5f;
+            }
             lastSpawn = 0;
         }
     }

@@ -103,9 +103,9 @@ MonoBehaviour:
   maxSpeed: 10
   minSpeed: 1
   rotationSpeed: 90
-  secondsToMaxDifficulty: 15
-  spawnTime: 2
-  flameDuration: 20
+  secondsToMaxDifficulty: 7
+  spawnTime: 1
+  flameDuration: 10
 --- !u!58 &5270387745527187233
 CircleCollider2D:
   m_ObjectHideFlags: 0

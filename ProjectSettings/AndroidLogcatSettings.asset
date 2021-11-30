@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "RF8NA2P11MP",
+    "m_SelectedDeviceId": "R58N70VZMNP",
     "m_SelectedPackage": {
-        "deviceId": "RF8NA2P11MP",
+        "deviceId": "R58N70VZMNP",
         "name": "com.TattooLafleur.LaFleur",
-        "processId": 28546,
+        "processId": 10745,
         "exited": true
     },
     "m_SelectedPriority": 0,
@@ -42,6 +42,30 @@
             "deviceId": "RF8NA2P11MP",
             "name": "com.TattooLafleur.LaFleur",
             "processId": 28546,
+            "exited": true
+        },
+        {
+            "deviceId": "R58N70VZMNP",
+            "name": "com.TattooLafleur.LaFleur",
+            "processId": 15254,
+            "exited": true
+        },
+        {
+            "deviceId": "R58N70VZMNP",
+            "name": "com.TattooLafleur.LaFleur",
+            "processId": 7507,
+            "exited": false
+        },
+        {
+            "deviceId": "R58N70VZMNP",
+            "name": "com.TattooLafleur.LaFleur",
+            "processId": 9517,
+            "exited": false
+        },
+        {
+            "deviceId": "R58N70VZMNP",
+            "name": "com.TattooLafleur.LaFleur",
+            "processId": 10745,
             "exited": true
         }
     ],
