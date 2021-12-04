@@ -178,7 +178,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 46817540b91df7841b0f5763df353f4e, type: 3}
+    m_Font: {fileID: 12800000, guid: d85532f1e6cf76345a009ec780680165, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -367,7 +367,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 350}
+  m_AnchoredPosition: {x: 0, y: 370}
   m_SizeDelta: {x: 451.23187, y: 80.07596}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &99421096
@@ -505,8 +505,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 80}
-  m_SizeDelta: {x: 213.5506, y: 93.00058}
+  m_AnchoredPosition: {x: 240, y: 100}
+  m_SizeDelta: {x: 356.81238, y: 117.08017}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &424401516
 MonoBehaviour:
@@ -528,8 +528,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 764027e3dc3a12f40ba9f67a528b2307, type: 3}
-    m_FontSize: 40
+    m_Font: {fileID: 12800000, guid: e89b13180a6898246a28156549af4642, type: 3}
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -540,7 +540,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: BACK
+  m_Text: RETOUR
 --- !u!222 &424401517
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -726,7 +726,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 764027e3dc3a12f40ba9f67a528b2307, type: 3}
+    m_Font: {fileID: 12800000, guid: a0f4e0effcd5f0243b1498b329346208, type: 3}
     m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
@@ -738,7 +738,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SEND YOUR SCORE
+  m_Text: Envoie Ton Score
 --- !u!222 &704212475
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -864,7 +864,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 420}
+  m_AnchoredPosition: {x: 0, y: 450}
   m_SizeDelta: {x: 627.68243, y: 125.42621}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1236695100
@@ -887,7 +887,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 764027e3dc3a12f40ba9f67a528b2307, type: 3}
+    m_Font: {fileID: 12800000, guid: e89b13180a6898246a28156549af4642, type: 3}
     m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
@@ -899,7 +899,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Chargement...
+  m_Text: '-'
 --- !u!222 &1236695101
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -943,8 +943,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 237.63013, y: 117.08017}
+  m_AnchoredPosition: {x: -240, y: 100}
+  m_SizeDelta: {x: 483.4469, y: 117.08017}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1867639207
 MonoBehaviour:
@@ -1020,7 +1020,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 764027e3dc3a12f40ba9f67a528b2307, type: 3}
+    m_Font: {fileID: 12800000, guid: e89b13180a6898246a28156549af4642, type: 3}
     m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
@@ -1032,7 +1032,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SEND
+  m_Text: ENVOYER
 --- !u!222 &1867639209
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1098,7 +1098,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 764027e3dc3a12f40ba9f67a528b2307, type: 3}
+    m_Font: {fileID: 12800000, guid: b934920e07a41db43b5ad1c0db5b4e24, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0

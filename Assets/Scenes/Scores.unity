@@ -293,7 +293,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 764027e3dc3a12f40ba9f67a528b2307, type: 3}
+    m_Font: {fileID: 12800000, guid: e89b13180a6898246a28156549af4642, type: 3}
     m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
@@ -305,7 +305,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menu
+  m_Text: MENU
 --- !u!222 &424401517
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -491,7 +491,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 764027e3dc3a12f40ba9f67a528b2307, type: 3}
+    m_Font: {fileID: 12800000, guid: a0f4e0effcd5f0243b1498b329346208, type: 3}
     m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
@@ -503,7 +503,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ' SCORES'
+  m_Text: Scores
 --- !u!222 &704212475
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -654,7 +654,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 764027e3dc3a12f40ba9f67a528b2307, type: 3}
+    m_Font: {fileID: 12800000, guid: e89b13180a6898246a28156549af4642, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0

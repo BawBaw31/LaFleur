@@ -256,8 +256,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000015259, y: 153}
-  m_SizeDelta: {x: 707.1046, y: 94.28285}
+  m_AnchoredPosition: {x: 0, y: 150}
+  m_SizeDelta: {x: 878.6941, y: 94.28285}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &168930325
 MonoBehaviour:
@@ -322,7 +322,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 764027e3dc3a12f40ba9f67a528b2307, type: 3}
+    m_Font: {fileID: 12800000, guid: e89b13180a6898246a28156549af4642, type: 3}
     m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
@@ -334,7 +334,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Toucher la fleur pour commencer
+  m_Text: TOUCHER LA FLEUR POUR COMMENCER
 --- !u!222 &168930327
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -420,8 +420,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 30, y: -30}
-  m_SizeDelta: {x: 366.6989, y: 88.13409}
+  m_AnchoredPosition: {x: 50, y: -50}
+  m_SizeDelta: {x: 950.2275, y: 88.13409}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &326483494
 MonoBehaviour:
@@ -456,7 +456,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 764027e3dc3a12f40ba9f67a528b2307, type: 3}
+    m_Font: {fileID: 12800000, guid: e89b13180a6898246a28156549af4642, type: 3}
     m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
@@ -512,7 +512,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000014305, y: 0.000011444}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 399.45306, y: 127.451584}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &405874975
@@ -535,7 +535,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 764027e3dc3a12f40ba9f67a528b2307, type: 3}
+    m_Font: {fileID: 12800000, guid: e89b13180a6898246a28156549af4642, type: 3}
     m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
@@ -547,7 +547,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Rejouer
+  m_Text: REJOUER
 --- !u!222 &405874976
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -915,7 +915,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000079899, y: -175}
+  m_AnchoredPosition: {x: 0, y: -170}
   m_SizeDelta: {x: 420.34485, y: 100.71117}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1009708479
@@ -938,7 +938,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 764027e3dc3a12f40ba9f67a528b2307, type: 3}
+    m_Font: {fileID: 12800000, guid: e89b13180a6898246a28156549af4642, type: 3}
     m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
@@ -950,7 +950,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menu
+  m_Text: MENU
 --- !u!222 &1009708480
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1301,8 +1301,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000022888, y: 170.7}
-  m_SizeDelta: {x: 529.51825, y: 102.89931}
+  m_AnchoredPosition: {x: 0, y: 170}
+  m_SizeDelta: {x: 685.5087, y: 102.89931}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1588361022
 MonoBehaviour:
@@ -1324,7 +1324,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 764027e3dc3a12f40ba9f67a528b2307, type: 3}
+    m_Font: {fileID: 12800000, guid: e89b13180a6898246a28156549af4642, type: 3}
     m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
@@ -1336,7 +1336,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Envoyer Score
+  m_Text: ENVOYER SCORE
 --- !u!222 &1588361023
 CanvasRenderer:
   m_ObjectHideFlags: 0

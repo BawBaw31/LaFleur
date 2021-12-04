@@ -14,6 +14,7 @@ public class FlamePatrol : MonoBehaviour
     public float secondsToMaxDifficulty;
     public float spawnTime;
     public float flameDuration;
+    public Animator animator;
 
     Vector2 targetPosition;
     float timer = 0.0f;
@@ -45,7 +46,7 @@ public class FlamePatrol : MonoBehaviour
         // Flame death
         if (timer >= flameDuration) 
         {
-            Destroy(gameObject);
+            StartCoroutine(DeathAnimation());
         }
 
         // Flame Patrol
@@ -66,4 +67,15 @@ public class FlamePatrol : MonoBehaviour
     float GetDifficultyPercent() {
         return Mathf.Clamp01(timer / secondsToMaxDifficulty);
     }
+
+    IEnumerator DeathAnimation()
+    {
+        animator.SetTrigger("Disappear");
+        yield return false;
+        if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
+        {                      
+            Destroy(gameObject);
+        }
+    }
+
 }
