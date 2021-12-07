@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6547272359649803104}
   - component: {fileID: 7172390291703963766}
   m_Layer: 0
-  m_Name: Flame
+  m_Name: Skull
   m_TagString: Flame
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,19 +94,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 6705370700731461470}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 032caa1cc7290f7429665b0d8c67422d, type: 3}
+  m_Script: {fileID: 11500000, guid: 33901e94e1a92cc4ba3a25ccf35bbf51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxX: 8.4
-  minX: -8.4
-  maxY: 4.5
-  minY: -4.5
-  maxSpeed: 10
-  minSpeed: 1
-  rotationSpeed: 90
-  secondsToMaxDifficulty: 7
+  maxX: 10
+  minX: -10
+  maxY: 5
+  minY: -5
+  maxSpeed: 5
+  minSpeed: 0.5
+  rotationSpeed: 50
+  secondsToMaxDifficulty: 20
   spawnTime: 1
-  flameDuration: 10
+  lifeDuration: 20
   animator: {fileID: 7172390291703963766}
 --- !u!58 &5270387745527187233
 CircleCollider2D:

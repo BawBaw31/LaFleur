@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlamePatrol : MonoBehaviour
+public class SkullPatrol : MonoBehaviour
 {
     public float maxX;
     public float minX;
@@ -13,7 +13,7 @@ public class FlamePatrol : MonoBehaviour
     public float rotationSpeed;
     public float secondsToMaxDifficulty;
     public float spawnTime;
-    public float flameDuration;
+    public float lifeDuration;
     public Animator animator;
 
     Vector2 targetPosition;
@@ -43,13 +43,13 @@ public class FlamePatrol : MonoBehaviour
             col.enabled = true;
         }
 
-        // Flame death
-        if (timer >= flameDuration) 
+        // Skull death
+        if (timer >= lifeDuration) 
         {
             StartCoroutine(DeathAnimation());
         }
 
-        // Flame Patrol
+        // Skull Patrol
         if((Vector2)transform.position != targetPosition){
             speed = Mathf.Lerp(minSpeed, maxSpeed, GetDifficultyPercent());
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);

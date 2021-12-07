@@ -9,12 +9,15 @@ public class MoveLaFleur : MonoBehaviour
     public GameObject loosePanel;
     public GameObject startPanel;
     public GameObject scoreText;
-    public GameObject GameManager;
+    public GameObject gameManager;
+    public string enemyTags;
+
     private bool firstTouch = false;
     private bool dragging = false;
     private float dist;
     private Vector3 offset;
     private Transform toDrag;
+    private List<GameObject> enemys;
 
     // Start is called before the first frame update
     void Start()
@@ -43,7 +46,7 @@ public class MoveLaFleur : MonoBehaviour
         {
 
             startPanel.SetActive(false);
-            GameManager.GetComponent<FlameSpawning>().enabled = true;
+            gameManager.GetComponent<EnemySpawning>().enabled = true;
             scoreText.GetComponent<DisplayScore>().enabled = true;
             firstTouch = true;
         }
@@ -66,7 +69,6 @@ public class MoveLaFleur : MonoBehaviour
 
             if(hit && (hit.collider.tag == "Lafleur"))
             {
-                Debug.Log(hit.collider);
                 toDrag = hit.transform;
                 dist = hit.transform.position.z - Camera.main.transform.position.z;
                 v3 = new Vector3(pos.x, pos.y, dist);
@@ -99,10 +101,28 @@ public class MoveLaFleur : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Flame")
+        if (enemyTags.Contains(collision.tag))
         {
             scoreText.GetComponent<DisplayScore>().endGame();
             loosePanel.SetActive(true);
+            StopEnemys();
         }
+    }
+
+    void StopEnemys() {
+        string[] allEnemyTags = enemyTags.Split(' ');
+        gameManager.GetComponent<EnemySpawning>().enabled = false;
+        foreach (string enemyTag in allEnemyTags)
+        {
+            GameObject[] enemyGroup = GameObject.FindGameObjectsWithTag(enemyTag);
+            foreach (GameObject enemy in enemyGroup) {
+                MonoBehaviour[] scripts = enemy.GetComponents<MonoBehaviour>();
+                foreach (MonoBehaviour script in scripts)
+                {
+                    script.enabled = false;
+                }
+            }
+        }
+        Destroy(gameObject);
     }
 }
