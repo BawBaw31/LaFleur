@@ -21,7 +21,7 @@ public class DisplayScore : MonoBehaviour
     void Update()
     {
         if (isAlive) {
-            lastScoreTime += Time.fixedDeltaTime;
+            lastScoreTime += Time.deltaTime;
             if (lastScoreTime > timeLaps) {
                 scoreValue += 1;
                 lastScoreTime = 0;

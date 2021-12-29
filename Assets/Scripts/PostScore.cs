@@ -57,19 +57,20 @@ public class PostScore : MonoBehaviour
         request.uploadHandler = (UploadHandler)new UploadHandlerRaw(jsonToSend);
         request.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();
         request.SetRequestHeader("Content-Type", "application/json");
+        request.SetRequestHeader("api-key", ApiManager.apiKEY);
 
         yield return request.SendWebRequest();
         var response = JSON.Parse(request.downloadHandler.text);
 
         if (request.isNetworkError)
         {
-            // Display some on screen
+            // Display some on Log
             Debug.Log(request.error);
             Debug.Log(response["msg"]);
         }
         else
         {
-            // go to main menu
+            // Go to main menu
             Debug.Log(response["msg"]);
             SceneManager.LoadScene("MainMenu");
         }

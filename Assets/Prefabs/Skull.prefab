@@ -101,12 +101,12 @@ MonoBehaviour:
   minX: -10
   maxY: 5
   minY: -5
-  maxSpeed: 5
-  minSpeed: 0.5
+  maxSpeed: 9
+  minSpeed: 1
   rotationSpeed: 50
   secondsToMaxDifficulty: 20
   spawnTime: 1
-  lifeDuration: 20
+  lifeDuration: 12
   animator: {fileID: 7172390291703963766}
 --- !u!58 &5270387745527187233
 CircleCollider2D:

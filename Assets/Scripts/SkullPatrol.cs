@@ -32,10 +32,10 @@ public class SkullPatrol : MonoBehaviour
     void Update()
     {
         // Set Timer
-        timer += Time.fixedDeltaTime;
+        timer += Time.deltaTime;
 
         // Constant Rotation
-        transform.Rotate(Vector3.forward * rotationSpeed * Time.fixedDeltaTime);
+        transform.Rotate(Vector3.forward * rotationSpeed * Time.deltaTime);
 
         // Activate Collider2D
         if(timer >= spawnTime && !col.enabled)

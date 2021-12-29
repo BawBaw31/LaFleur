@@ -8,34 +8,39 @@ public class EnemySpawning : MonoBehaviour
     public float minX;
     public float maxY;
     public float minY;
-    public GameObject skull;
-    public GameObject knife;
     public float timeLaps;
+    public int maxCountOfKnives;
     public int knifeY;
     public int[] knifePossibleX = new int[11];
+    public GameObject skull;
+    public GameObject knife;
+
     float lastSpawn = 0.0f;
 
     // Start is called before the first frame update
     void Start()
     {
+        Vector3 skullSpawnPosition = GetRandomPosition();
+        Instantiate(skull, skullSpawnPosition, Quaternion.identity);
+        Vector3 knifeSpawnPosition = GetRandomPositionVert();
+        Instantiate(knife, knifeSpawnPosition, Quaternion.identity);
     }
 
     // Update is called once per frame
     void Update()
     {
-        lastSpawn += Time.fixedDeltaTime;
+        lastSpawn += Time.deltaTime;
         if (lastSpawn > timeLaps) 
         {
-            Vector3 skullSpawnPosition = GetRandomPosition();
-            Instantiate(skull, skullSpawnPosition, Quaternion.identity);
-            Vector3 knifeSpawnPosition = GetRandomPositionVert();
-            Instantiate(knife, knifeSpawnPosition, Quaternion.identity);
+            CreateSkulls();
+            CreateKnives();
             if (timeLaps > 3) {
                 timeLaps -= 0.5f;
             }
             lastSpawn = 0;
         }
     }
+    
     Vector3 GetRandomPosition() {
         float randomX = Random.Range(minX, maxX);
         float randomY = Random.Range(minY, maxY);
@@ -44,5 +49,21 @@ public class EnemySpawning : MonoBehaviour
     Vector3 GetRandomPositionVert() {
         int randomIndex = Random.Range(0, knifePossibleX.Length);
         return new Vector3(knifePossibleX[randomIndex], knifeY, 0);
+    }
+
+    int HowManyKnives() {
+        return Random.Range(0, maxCountOfKnives);
+    }
+
+    void CreateKnives() {
+        for (int i = 0; i < HowManyKnives(); i++) {
+            Vector3 knifeSpawnPosition = GetRandomPositionVert();
+            Instantiate(knife, knifeSpawnPosition, Quaternion.identity);
+        }
+    }
+
+    void CreateSkulls() {
+        Vector3 skullSpawnPosition = GetRandomPosition();
+        Instantiate(skull, skullSpawnPosition, Quaternion.identity);
     }
 }
