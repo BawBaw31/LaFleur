@@ -1,5 +1,5 @@
 # LaFleur
-Mobile game for tattoo artist @tattoolafleur
+Jeu mobile créé pour le tattoo artist : @tattoolafleur.
 
 -------------------------
 
@@ -8,4 +8,5 @@ En cas de besoin d'assitance, contactez-moi sur github or send a mail to tattool
 
 -------------------------
 
-## Confidentialité
+## Engagement de Confidentialité
+Les informations collectées servent uniquement à déterminer les gagnants des concours.  Elles ne sont en aucun cas utilisées à but lucratif ou fournies à des entreprises tierces. 
