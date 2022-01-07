@@ -11,21 +11,14 @@ public class PostScore : MonoBehaviour
     
     public Text scoreTxt;
     public InputField nameField;
-    // TouchScreenKeyboard keyboard;
-    // string instagramName;
     int scoreValue;
 
     void Start()
     {
-        // OpenKeyboard();
     }
 
     void Update()
     {
-        // if(keyboard != null && keyboard.status == TouchScreenKeyboard.Status.Done)
-        // {
-        //     instagramName = keyboard.text;
-        // }
     }
 
     void OnEnable()
@@ -33,10 +26,6 @@ public class PostScore : MonoBehaviour
         scoreValue  =  PlayerPrefs.GetInt("score");
         scoreTxt.text = "Score : " + scoreValue;
     }
-
-    // public void OpenKeyboard() {
-    //     keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default);
-    // }
 
     public void SubmitScore() {
         if (nameField.text != "")
@@ -48,8 +37,9 @@ public class PostScore : MonoBehaviour
 
     IEnumerator PostRequest(string url)
     {
-        // Display this on screen
+        // FIX : ADD LOADER
         print("Loading...");
+        
         string json = "{\"player\" : \""+nameField.text+"\", \"value\" : "+scoreValue+"}";
 
         UnityWebRequest request = new UnityWebRequest(url, "POST");

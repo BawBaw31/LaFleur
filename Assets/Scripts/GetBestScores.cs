@@ -22,6 +22,7 @@ public class GetBestScores : MonoBehaviour
     {
         using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
         {
+            // class ApiManager contains string apiKEY
             webRequest.SetRequestHeader("api-key", ApiManager.apiKEY);
             yield return webRequest.SendWebRequest();
 
