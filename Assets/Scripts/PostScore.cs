@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Networking;
 using SimpleJSON;
+using System.Net;
 
 public class PostScore : MonoBehaviour
 {
@@ -31,13 +32,18 @@ public class PostScore : MonoBehaviour
         if (nameField.text != "")
         {
             // class ApiManager contains string apiUrl
-            StartCoroutine(PostRequest(ApiManager.apiUrl+"score"));
+            try {
+                StartCoroutine(PostRequest(ApiManager.apiUrl+"score"));
+            } catch(WebException e)
+            {
+                Debug.Log(e);
+            }
         }
     }
 
     IEnumerator PostRequest(string url)
     {
-        // FIX : ADD LOADER
+        // TODO : ADD LOADER
         print("Loading...");
         
         string json = "{\"player\" : \""+nameField.text+"\", \"value\" : "+scoreValue+"}";
@@ -54,15 +60,21 @@ public class PostScore : MonoBehaviour
 
         if (request.isNetworkError)
         {
-            // Display some on Log
+            // TODO : DISPLAY SOME ON SCREEN
             Debug.Log(request.error);
-            Debug.Log(response["msg"]);
+            Debug.Log(request.responseCode + ": " + response["msg"]);
         }
         else
         {
-            // Go to main menu
-            Debug.Log(response["msg"]);
-            SceneManager.LoadScene("MainMenu");
+            if (request.responseCode == 200)
+            {
+                Debug.Log(response["msg"]);
+                SceneManager.LoadScene("MainMenu");
+            } else 
+            {
+                // TODO : DISPLAY SOME ON SCREEN
+                Debug.Log(request.responseCode + ": " + response["msg"]);
+            }
         }
     }
 
