@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MoveLaFleur : MonoBehaviour
 {
-    Collider2D col;
     public float speed;
     public GameObject loosePanel;
     public GameObject startPanel;
@@ -22,7 +21,6 @@ public class MoveLaFleur : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        col = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame

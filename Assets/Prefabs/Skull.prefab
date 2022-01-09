@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2235038449577735061}
   - component: {fileID: 7049257371536277120}
   - component: {fileID: 2638220169729027929}
-  - component: {fileID: 5270387745527187233}
   - component: {fileID: 6547272359649803104}
   - component: {fileID: 7172390291703963766}
+  - component: {fileID: 830078192886983407}
   m_Layer: 0
   m_Name: Skull
   m_TagString: Flame
@@ -108,22 +108,6 @@ MonoBehaviour:
   spawnTime: 1
   lifeDuration: 12
   animator: {fileID: 7172390291703963766}
---- !u!58 &5270387745527187233
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6705370700731461470}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.017606497, y: -0.40537167}
-  serializedVersion: 2
-  m_Radius: 2.4844782
 --- !u!50 &6547272359649803104
 Rigidbody2D:
   serializedVersion: 4
@@ -164,3 +148,67 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!68 &830078192886983407
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6705370700731461470}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 3.0571458, y: -1.0139937}
+  - {x: 2.9882317, y: -0.62152433}
+  - {x: 2.804892, y: -0.17800665}
+  - {x: 2.3188195, y: 0.56151915}
+  - {x: 1.7299991, y: 1.200562}
+  - {x: 0.883126, y: 1.7693791}
+  - {x: 0.23457897, y: 2.0051293}
+  - {x: -0.6035141, y: 2.0856423}
+  - {x: -0.9589546, y: 1.9780746}
+  - {x: -0.3809632, y: 1.8388228}
+  - {x: 0.22454767, y: 1.6473775}
+  - {x: 0.8076942, y: 1.3761497}
+  - {x: 0.40304112, y: 1.0961823}
+  - {x: -0.1695959, y: 1.1197076}
+  - {x: -0.7833089, y: 0.8914523}
+  - {x: -1.045262, y: 0.47686148}
+  - {x: -1.1904027, y: 0.44775915}
+  - {x: -1.274863, y: 0.34268618}
+  - {x: -1.6170082, y: -0.34412956}
+  - {x: -1.8973005, y: -0.4632573}
+  - {x: -2.1242704, y: -0.70024395}
+  - {x: -2.1654267, y: -0.89459515}
+  - {x: -2.0393257, y: -1.0728941}
+  - {x: -1.6201527, y: -1.1904249}
+  - {x: -1.5168712, y: -1.3084946}
+  - {x: -1.8921733, y: -2.0086956}
+  - {x: -1.7137821, y: -2.2695303}
+  - {x: -3.3797388, y: -2.6222458}
+  - {x: -3.7949104, y: -2.8134346}
+  - {x: -1.5254593, y: -2.3815212}
+  - {x: -1.078394, y: -2.6398535}
+  - {x: -0.68385106, y: -2.5808754}
+  - {x: -0.49248892, y: -2.472931}
+  - {x: -0.36345047, y: -2.166521}
+  - {x: -0.1962228, y: -2.1633406}
+  - {x: 0.18422024, y: -2.033351}
+  - {x: 0.48767775, y: -2.3022938}
+  - {x: 0.6337548, y: -2.6093864}
+  - {x: 0.8696222, y: -2.670545}
+  - {x: 1.1696678, y: -2.6458282}
+  - {x: 1.7283221, y: -2.29395}
+  - {x: 2.2441576, y: -1.6616621}
+  - {x: 2.3015845, y: -1.3404083}
+  - {x: 3.557896, y: -1.06773}
+  - {x: 3.4614923, y: -0.9450655}
+  - {x: 3.2950127, y: -0.96827984}
+  - {x: 3.165725, y: -0.98954105}
+  - {x: 3.0633965, y: -1.0170555}

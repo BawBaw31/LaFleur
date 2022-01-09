@@ -19,13 +19,13 @@ public class SkullPatrol : MonoBehaviour
     Vector2 targetPosition;
     float timer = 0.0f;
     float speed;
-    CircleCollider2D col;
+    EdgeCollider2D col;
 
     // Start is called before the first frame update
     void Start()
     {
         targetPosition = GetRandomPosition();
-        col = GetComponent<CircleCollider2D>();
+        col = GetComponent<EdgeCollider2D>();
     }
 
     // Update is called once per frame
