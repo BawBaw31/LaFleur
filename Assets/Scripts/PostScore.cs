@@ -9,7 +9,7 @@ using System.Net;
 
 public class PostScore : MonoBehaviour
 {
-    
+    public Image Loader;
     public Text scoreTxt;
     public InputField nameField;
     int scoreValue;
@@ -37,14 +37,15 @@ public class PostScore : MonoBehaviour
             } catch(WebException e)
             {
                 Debug.Log(e);
+                Debug.Log("HEYYY");
+                Loader.enabled = false;
             }
         }
     }
 
     IEnumerator PostRequest(string url)
     {
-        // TODO : ADD LOADER
-        print("Loading...");
+        Loader.enabled = true;
         
         string json = "{\"player\" : \""+nameField.text+"\", \"value\" : "+scoreValue+"}";
 
@@ -56,25 +57,27 @@ public class PostScore : MonoBehaviour
         request.SetRequestHeader("api-key", ApiManager.apiKEY);
 
         yield return request.SendWebRequest();
-        var response = JSON.Parse(request.downloadHandler.text);
 
-        if (request.isNetworkError)
-        {
-            // TODO : DISPLAY SOME ON SCREEN
-            Debug.Log(request.error);
-            Debug.Log(request.responseCode + ": " + response["msg"]);
-        }
-        else
-        {
-            if (request.responseCode == 200)
-            {
+        if (string.IsNullOrEmpty (request.error)) {
+            var response = JSON.Parse(request.downloadHandler.text);
+
+            if (request.responseCode == 200) {
+                // LOGS
                 Debug.Log(response["msg"]);
                 SceneManager.LoadScene("MainMenu");
-            } else 
-            {
+            } else {
+                Loader.enabled = false;
                 // TODO : DISPLAY SOME ON SCREEN
-                Debug.Log(request.responseCode + ": " + response["msg"]);
+                // LOGS
+                Debug.LogError(request.responseCode + ": " + response["msg"]);
             }
+            
+        }
+        else {
+            Loader.enabled = false;
+            // TODO : DISPLAY SOME ON SCREEN
+            // LOGS
+            Debug.LogError(request.error);
         }
     }
 
