@@ -5,21 +5,19 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Networking;
 using SimpleJSON;
-using System.Net;
 
 public class PostScore : MonoBehaviour
 {
     public Image Loader;
+    public Text ErrorMsg;
     public Text scoreTxt;
     public InputField nameField;
     int scoreValue;
 
     void Start()
     {
-    }
-
-    void Update()
-    {
+        ErrorMsg.enabled = false;
+        Loader.enabled = false;
     }
 
     void OnEnable()
@@ -32,19 +30,13 @@ public class PostScore : MonoBehaviour
         if (nameField.text != "")
         {
             // class ApiManager contains string apiUrl
-            try {
-                StartCoroutine(PostRequest(ApiManager.apiUrl+"score"));
-            } catch(WebException e)
-            {
-                Debug.Log(e);
-                Debug.Log("HEYYY");
-                Loader.enabled = false;
-            }
+            StartCoroutine(PostRequest(ApiManager.apiUrl+"score"));
         }
     }
 
     IEnumerator PostRequest(string url)
     {
+        ErrorMsg.enabled = false;
         Loader.enabled = true;
         
         string json = "{\"player\" : \""+nameField.text+"\", \"value\" : "+scoreValue+"}";
@@ -62,22 +54,19 @@ public class PostScore : MonoBehaviour
             var response = JSON.Parse(request.downloadHandler.text);
 
             if (request.responseCode == 200) {
-                // LOGS
-                Debug.Log(response["msg"]);
+                Debug.Log(request.responseCode + ": " + response["msg"]);
                 SceneManager.LoadScene("MainMenu");
             } else {
                 Loader.enabled = false;
-                // TODO : DISPLAY SOME ON SCREEN
-                // LOGS
+                ErrorMsg.enabled = true;
                 Debug.LogError(request.responseCode + ": " + response["msg"]);
             }
             
         }
         else {
             Loader.enabled = false;
-            // TODO : DISPLAY SOME ON SCREEN
-            // LOGS
-            Debug.LogError(request.error);
+            ErrorMsg.enabled = true;
+            Debug.LogError("Web Error : " +  request.error);
         }
     }
 
