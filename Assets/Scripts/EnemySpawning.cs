@@ -11,7 +11,7 @@ public class EnemySpawning : MonoBehaviour
     public float timeLaps;
     public int maxCountOfKnives;
     public int knifeY;
-    public int[] knifePossibleX = new int[11];
+    public int[] knifePossibleX = new int[7];
     public GameObject skull;
     public GameObject knife;
 

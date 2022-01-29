@@ -256,7 +256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 150}
+  m_AnchoredPosition: {x: 0, y: -200}
   m_SizeDelta: {x: 878.6941, y: 94.28285}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &168930325
@@ -420,8 +420,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -50}
-  m_SizeDelta: {x: 950.2275, y: 88.13409}
+  m_AnchoredPosition: {x: 100, y: -200}
+  m_SizeDelta: {x: 1400, y: 725}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &326483494
 MonoBehaviour:
@@ -457,18 +457,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e89b13180a6898246a28156549af4642, type: 3}
-    m_FontSize: 60
+    m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 70
+    m_MaxSize: 100
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 'Score : 300'
 --- !u!222 &326483496
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -536,7 +536,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e89b13180a6898246a28156549af4642, type: 3}
-    m_FontSize: 70
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -939,7 +939,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e89b13180a6898246a28156549af4642, type: 3}
-    m_FontSize: 70
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -1208,7 +1208,7 @@ Transform:
   m_GameObject: {fileID: 1227037730}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1536,14 +1536,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b5d8f38cd5aae94fba967e9f6400c7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxX: 8.4
-  minX: -8.4
-  maxY: 4.5
-  minY: -4.5
+  maxX: 4
+  minX: -4
+  maxY: 6
+  minY: -6
   timeLaps: 5
   maxCountOfKnives: 5
   knifeY: 9
-  knifePossibleX: 0a0000000800000006000000040000000200000000000000fefffffffcfffffffafffffff8fffffff6ffffff
+  knifePossibleX: 03000000020000000100000000000000fffffffffefffffffdffffff
   skull: {fileID: 6705370700731461470, guid: 47ae4cd9fdc3e7244a6d3cec480d7496, type: 3}
   knife: {fileID: 7660778829287555620, guid: ba29314d97a8f7c43bbfa10eb8ca4564, type: 3}
 --- !u!4 &1462952782
@@ -1596,7 +1596,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 170}
-  m_SizeDelta: {x: 685.5087, y: 102.89931}
+  m_SizeDelta: {x: 870.805, y: 102.89931}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1588361022
 MonoBehaviour:
@@ -1619,7 +1619,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e89b13180a6898246a28156549af4642, type: 3}
-    m_FontSize: 70
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1

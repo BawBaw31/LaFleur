@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2235038449577735061}
   - component: {fileID: 7049257371536277120}
-  - component: {fileID: 2638220169729027929}
   - component: {fileID: 6547272359649803104}
   - component: {fileID: 7172390291703963766}
   - component: {fileID: 830078192886983407}
+  - component: {fileID: 2638220169729027929}
   m_Layer: 0
   m_Name: Skull
   m_TagString: Flame
@@ -29,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6705370700731461470}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1, y: -3.718, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -85,29 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2638220169729027929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6705370700731461470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33901e94e1a92cc4ba3a25ccf35bbf51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxX: 10
-  minX: -10
-  maxY: 5
-  minY: -5
-  maxSpeed: 9
-  minSpeed: 1
-  rotationSpeed: 50
-  secondsToMaxDifficulty: 20
-  spawnTime: 1
-  lifeDuration: 12
-  animator: {fileID: 7172390291703963766}
 --- !u!50 &6547272359649803104
 Rigidbody2D:
   serializedVersion: 4
@@ -212,3 +189,26 @@ EdgeCollider2D:
   - {x: 3.2950127, y: -0.96827984}
   - {x: 3.165725, y: -0.98954105}
   - {x: 3.0633965, y: -1.0170555}
+--- !u!114 &2638220169729027929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6705370700731461470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33901e94e1a92cc4ba3a25ccf35bbf51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxX: 4
+  minX: -4
+  maxY: 6
+  minY: -6
+  maxSpeed: 9
+  minSpeed: 1
+  rotationSpeed: 50
+  secondsToMaxDifficulty: 20
+  spawnTime: 1
+  lifeDuration: 12
+  animator: {fileID: 7172390291703963766}
