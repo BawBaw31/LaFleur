@@ -127,7 +127,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.2.0
+  bundleVersion: 1.4.0
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -180,7 +180,7 @@ PlayerSettings:
     Standalone: 0
     iPhone: 0
     tvOS: 0
-  AndroidBundleVersionCode: 3
+  AndroidBundleVersionCode: 5
   AndroidMinSdkVersion: 19
   AndroidTargetSdkVersion: 30
   AndroidPreferredInstallLocation: 1
@@ -258,7 +258,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/arthu/Desktop/GooglePlay/LaFleurGame/user.keystore
+  AndroidKeystoreName: C:/Users/arthu/Desktop/Unity-Builds/LaFleur/GooglePlay/user.keystore
   AndroidKeyaliasName: bawbaw31
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
