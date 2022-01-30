@@ -17,7 +17,6 @@ public class EnemySpawning : MonoBehaviour
 
     float lastSpawn = 0.0f;
 
-    // Start is called before the first frame update
     void Start()
     {
         Vector3 skullSpawnPosition = GetRandomPosition();
@@ -26,7 +25,6 @@ public class EnemySpawning : MonoBehaviour
         Instantiate(knife, knifeSpawnPosition, Quaternion.identity);
     }
 
-    // Update is called once per frame
     void Update()
     {
         lastSpawn += Time.deltaTime;

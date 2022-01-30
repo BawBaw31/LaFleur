@@ -21,17 +21,14 @@ public class SkullPatrol : MonoBehaviour
     float speed;
     EdgeCollider2D col;
 
-    // Start is called before the first frame update
     void Start()
     {
         targetPosition = GetRandomPosition();
         col = GetComponent<EdgeCollider2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // Set Timer
         timer += Time.deltaTime;
 
         // Constant Rotation

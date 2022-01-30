@@ -10,14 +10,12 @@ public class ChangingColorText : MonoBehaviour
     float t = 0f;
     Text text;
 
-    // Start is called before the first frame update
     void Start()
     {
         text = GetComponent<Text>();
         text.color = gradient.Evaluate(t);
     }
 
-    // Update is called once per frame
     void Update()
     {
         t += Time.deltaTime * scaleTime;

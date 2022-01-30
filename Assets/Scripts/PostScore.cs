@@ -29,7 +29,7 @@ public class PostScore : MonoBehaviour
     public void SubmitScore() {
         if (nameField.text != "")
         {
-            // class ApiManager contains string apiUrl
+            // Class ApiManager contains string apiUrl
             StartCoroutine(PostRequest(ApiManager.apiUrl+"score"));
         }
     }

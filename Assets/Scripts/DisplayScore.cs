@@ -10,14 +10,12 @@ public class DisplayScore : MonoBehaviour
     int scoreValue = 0;
     bool isAlive = true;
     Text score;
-    
-    // Start is called before the first frame update
+
     void Start()
     {
         score = GetComponent<Text>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (isAlive) {

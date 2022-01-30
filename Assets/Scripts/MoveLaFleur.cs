@@ -18,12 +18,6 @@ public class MoveLaFleur : MonoBehaviour
     private Transform toDrag;
     private List<GameObject> enemys;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (firstTouch)

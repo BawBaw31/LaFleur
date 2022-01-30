@@ -12,7 +12,6 @@ public class KnifePatrol : MonoBehaviour
     Vector2 targetPosition;
     PolygonCollider2D col;
 
-    // Start is called before the first frame update
     void Start()
     {   
         col = GetComponent<PolygonCollider2D>();
@@ -20,7 +19,6 @@ public class KnifePatrol : MonoBehaviour
         targetPosition = GetFinalPosition();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if((Vector2)transform.position != targetPosition) {

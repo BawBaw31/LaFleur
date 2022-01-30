@@ -10,14 +10,12 @@ public class ChangingColorImage : MonoBehaviour
     float t = 0f;
     Image image;
 
-    // Start is called before the first frame update
     void Start()
     {
         image = GetComponent<Image>();
         image.color = gradient.Evaluate(t);
     }
 
-    // Update is called once per frame
     void Update()
     {
         t += Time.deltaTime * scaleTime;
