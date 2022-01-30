@@ -11,14 +11,13 @@ public class GetBestScores : MonoBehaviour
     public Image Loader;
     public Text ErrorMsg;
 
-    // Start is called before the first frame update
     void Start()
     {
         ErrorMsg.enabled = false;
         Loader.enabled = true;
         bestScores = GetComponent<Text>();
 
-        // class ApiManager contains string apiUrl
+        // Class ApiManager contains string apiUrl
         StartCoroutine(GetRequest(ApiManager.apiUrl+"score/best/3"));
     }
 
@@ -31,7 +30,7 @@ public class GetBestScores : MonoBehaviour
     {
         using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
         {
-            // class ApiManager contains string apiKEY
+            // Class ApiManager contains string apiKEY
             webRequest.SetRequestHeader("api-key", ApiManager.apiKEY);
             yield return webRequest.SendWebRequest();
 

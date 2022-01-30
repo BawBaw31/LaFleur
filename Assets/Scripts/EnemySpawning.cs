@@ -11,13 +11,12 @@ public class EnemySpawning : MonoBehaviour
     public float timeLaps;
     public int maxCountOfKnives;
     public int knifeY;
-    public int[] knifePossibleX = new int[11];
+    public int[] knifePossibleX = new int[7];
     public GameObject skull;
     public GameObject knife;
 
     float lastSpawn = 0.0f;
 
-    // Start is called before the first frame update
     void Start()
     {
         Vector3 skullSpawnPosition = GetRandomPosition();
@@ -26,7 +25,6 @@ public class EnemySpawning : MonoBehaviour
         Instantiate(knife, knifeSpawnPosition, Quaternion.identity);
     }
 
-    // Update is called once per frame
     void Update()
     {
         lastSpawn += Time.deltaTime;
